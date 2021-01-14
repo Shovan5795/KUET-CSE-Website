@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+	body{
+		background-color: rgba(51,23,33,1);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 80%;
+		height: 100%;
+	}
+	li{
+		border-right: 1px solid blue;
+		padding: 8px;
+	}
+
+	.height500{
+		height: 500px;
+	}
+	.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  width: 100%;
+}
+
+	.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 25px;
+		}
+	a{
+		font-family: Lucida Sans Unicode;
+	}
+
+	a:hover{
+		color:red;
+	}
+	b{
+		font-family: Comic Sans MS;
+		font-size: 25px;
+	}
+	
+	.navbar:hover {background-color: #333;}
+	table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #808000;
+}
+tr:nth-child(odd) {
+    background-color: #00FF00;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="indexx.html"><b>KUET</b>CSE</a>
+  <a href="slide.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Courses.html">Courses</a>
+  <a href="student.php">Student Corner</a>
+  <a href="teacher.php">Teacher Corner</a>
+  <a href="employee.php">Employee Corner</a>
+  <a href="attendance.php"> Student Attendance</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="firsty.html" class="w3-bar-item w3-button">1st Year</a>
+  <a href="secondy.html" class="w3-bar-item w3-button">2nd Year</a>
+  <a href="thirdy.html" class="w3-bar-item w3-button">3rd Year</a>
+  <a href="fourthy.html" class="w3-bar-item w3-button">4th Year</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" style="padding-top: -110px;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="float: center; ">Undergraduate Courses</h1>
+  </div>
+</div>
+<br>
+<br>
+<div style="padding-right: 0px;">
+<h3 style="color:#800000;"><b>Year: Fourth Term: First</b><h3>
+<table>
+	<tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+  <tr>
+    <th>1</th>
+    <th>CSE 4000</th>
+    <th>Thesis/Project</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>2</th>
+    <th>CSE 4105</th>
+    <th>Computer Networks</th>
+    <th>3.00</th>
+    <th>CSE 3201</th>
+    </tr>
+  <tr>
+    <th>3</th>
+    <th>CSE 4106</th>
+    <th>Computer Networks Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>4</th>
+    <th>CSE 4109</th>
+    <th>Artificial Intelligence</th>
+    <th>3.00</th>
+    <th>CSE 2201</th>
+    </tr>
+  <tr>
+    <th>5</th>
+    <th>CSE 4110</th>
+    <th>Artificial Intelligence Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>6</th>
+    <th>CSE 4120</th>
+    <th>Technical Writing And Seminar</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+   <tr>
+    <th>7</th>
+    <th>CSE xxxx</th>
+    <th>Course from Optional Group</th>
+    <th>(3.00+0.75)</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>CSE xxxx</th>
+    <th>Course from Optional Group</th>
+    <th>(3.00+0.75)</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>9</th>
+    <th>IEM 4127</th>
+    <th>Industrial Management</th>
+    <th>3.00</th>
+    <th>EEE 2113</th>
+    </tr>
+    <tr> 
+         <th>Theory : 15</th>
+         <th>Sessional : 4.5</th>     
+         <th>Thesis/Project : 1.5</th>
+         <th>Total Credit: 21.00</th>
+         <th></th>
+    </tr>
+   </table>
+   <br>
+   <br>
+   <h3 style="color:#FF00FF;"><b>Optional Courses For Fourth Year First Term</b><h3>
+<table>
+	<tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+  <tr>
+    <th>1</th>
+    <th>CSE 4103</th>
+    <th>VLSI Design</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>2</th>
+    <th>CSE 4104</th>
+    <th>VLSI Design Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>3</th>
+    <th>CSE 4107</th>
+    <th>Digital Signal Processing</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>4</th>
+    <th>CSE 4108</th>
+    <th>Digital Signal Processing Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>5</th>
+    <th>CSE 4111</th>
+    <th>Machine Learning</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>6</th>
+    <th>CSE 4112</th>
+    <th>Machine Learning Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>7</th>
+    <th>CSE 4115</th>
+    <th>Computer And Network Security</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>CSE 4115</th>
+    <th>Computer And Network Security Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>9</th>
+    <th>CSE 4117</th>
+    <th>Modeling And Simulation</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>10</th>
+    <th>CSE 4118</th>
+    <th>Modeling And Simulation Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>11</th>
+    <th>CSE 4119</th>
+    <th>Pattern Recognition</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>12</th>
+    <th>CSE 4120</th>
+    <th>Pattern Recognition Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>13</th>
+    <th>CSE 4127</th>
+    <th>Image Processing and Computer Vision</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <th>14</th>
+    <th>CSE 4128</th>
+    <th>Image Processing and Computer Vision Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>15</th>
+    <th>CSE 4129</th>
+    <th>Ubiquitous Computing</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>16</th>
+    <th>CSE 4130</th>
+    <th>Ubiquitous Computing</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+  </table>
+  <br>
+  <br>
+
+
+   <h3 style="color:#800000;"><b>Year: Fourth Term: Second</b><h3>
+   <table>
+   <tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+    <tr>
+    <th>1</th>
+    <th>CSE 4000</th>
+    <th>Project/Thesis</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>2</th>
+    <th>CSE 4207</th>
+    <th>Computer Graphics</th>
+    <th>3.00</th>
+    <th>MATH 2207</th>
+    </tr>
+    <tr>
+    <th>3</th>
+    <th>CSE 4208</th>
+    <th>Computer Graphics Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>4</th>
+    <th>CSE 4223</th>
+    <th>Digital System Design</th>
+    <th>3.00</th>
+    <th>CSE 1203</th>
+    </tr>
+    <tr>
+    <th>5</th>
+    <th>CSE 4224</th>
+    <th>Digital System Design Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>6</th>
+    <th>CSE xxxx</th>
+    <th>Course from Optional Group</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>7</th>
+    <th>CSE xxxx</th>
+    <th>Course from Optional Group</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>CSE xxxx</th>
+    <th>Course from Optional Group</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr> 
+         <th>Theory : 15</th>
+         <th>Sessional : 1.50</th>     
+         <th>Thesis/Project : 3.00</th>
+         <th>Total: 19.50</th>
+         <th></th>
+    </tr>
+</table>
+<br>
+<br>
+<h3 style="color:#FF00FF;"><b>Optional Courses For Fourth Year Second Term</b><h3>
+<table>
+	<tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+    <tr>
+    <th>1</th>
+    <th>CSE 4211</th>
+    <th>Algorithm Engineering</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>2</th>
+    <th>CSE 4213</th>
+    <th>Fault Tolerant System</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>3</th>
+    <th>CSE 4215</th>
+    <th>E-Commerce</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>4</th>
+    <th>CSE 4217</th>
+    <th>Principles of Programming Language</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>5</th>
+    <th>CSE 4219</th>
+    <th>Distributed Database Systems</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>6</th>
+    <th>CSE 4221</th>
+    <th>Natural Language Processing</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>7</th>
+    <th>CSE 4233</th>
+    <th>Robotics</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>CSE 4225</th>
+    <th>Embedded Systems</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>9</th>
+    <th>CSE 4227</th>
+    <th>Human Computer Interaction</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>10</th>
+    <th>CSE 4231</th>
+    <th>Control Systems Engineering</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>11</th>
+    <th>CSE 4235</th>
+    <th>Multimedia Technology</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>12</th>
+    <th>CSE 4237</th>
+    <th>Computational Geometry</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>13</th>
+    <th>CSE 4239</th>
+    <th>Data Mining</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>14</th>
+    <th>CSE 4241</th>
+    <th>Biomedical Engineering</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>15</th>
+    <th>CSE 4243</th>
+    <th>Parallel And Distributed Processing</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>16</th>
+    <th>CSE 4247</th>
+    <th>Graph Theory</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  </table>
+	
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>

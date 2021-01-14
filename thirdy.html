@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+	body{
+		background-color: rgba(51,23,33,1);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 80%;
+		height: 100%;
+	}
+	li{
+		border-right: 1px solid blue;
+		padding: 8px;
+	}
+
+	.height500{
+		height: 500px;
+	}
+	.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  width: 100%;
+}
+
+	.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 25px;
+		}
+	a{
+		font-family: Lucida Sans Unicode;
+	}
+
+	a:hover{
+		color:red;
+	}
+	b{
+		font-family: Comic Sans MS;
+		font-size: 25px;
+	}
+	
+	.navbar:hover {background-color: #333;}
+	table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #808000;
+}
+tr:nth-child(odd) {
+    background-color: #00FF00;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="indexx.html"><b>KUET</b>CSE</a>
+  <a href="slide.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Courses.html">Courses</a>
+  <a href="student.php">Student Corner</a>
+  <a href="teacher.php">Teacher Corner</a>
+  <a href="employee.php">Employee Corner</a>
+  <a href="attendance.php"> Student Attendance</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="firsty.html" class="w3-bar-item w3-button">1st Year</a>
+  <a href="secondy.html" class="w3-bar-item w3-button">2nd Year</a>
+  <a href="thirdy.html" class="w3-bar-item w3-button">3rd Year</a>
+  <a href="fourthy.html" class="w3-bar-item w3-button">4th Year</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" style="padding-top: -110px;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="float: center; ">Undergraduate Courses</h1>
+  </div>
+</div>
+<br>
+<br>
+<div style="padding-right: 0px;">
+<h3 style="color:#800000;"><b>Year: Third Term: First</b><h3>
+<table>
+	<tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+  <tr>
+    <th>1</th>
+    <th>CSE 3100</th>
+    <th>Web Programming Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>2</th>
+    <th>CSE 3101</th>
+    <th>Theory of Computation</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>3</th>
+    <th>CSE 3103</th>
+    <th>Peripherals and Interfacing</th>
+    <th>3.00</th>
+    <th>CSE 2203</th>
+    </tr>
+  <tr>
+    <th>4</th>
+    <th>CSE 3104</th>
+    <th>Peripherals and Interfacing Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>5</th>
+    <th>CSE 3109</th>
+    <th>Database Systems</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>6</th>
+    <th>CSE 3110</th>
+    <th>Database Systems Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+   <tr>
+    <th>7</th>
+    <th>CSE 3119</th>
+    <th>Software Engineering &amp Information Systems</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>CSE 3120</th>
+    <th>Software Engineering &amp Information Systems Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>9</th>
+    <th>ECE 3115</th>
+    <th>Data Communication</th>
+    <th>3.00</th>
+    <th>EEE 2113</th>
+    </tr>
+    <tr>
+    <th>10</th>
+    <th>ECE 3116</th>
+    <th>Data Communication Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr> <th>Theory : 15</th>
+         <th>Sessional : 6</th>     
+         <th>Thesis/Project : 0</th>
+         <th>Total Credit: 21.00</th>
+         <th></th>
+    </tr>
+   </table>
+   <br>
+   <br>
+   <h3 style="color:#800000;"><b>Year: Third Term: Second</b><h3>
+   <table>
+   <tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+    <tr>
+    <th>1</th>
+    <th>CSE 3200</th>
+    <th>System Development Project</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>2</th>
+    <th>CSE 3201</th>
+    <th>Operating Systems</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>3</th>
+    <th>CSE 3202</th>
+    <th>Operating Systems Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>4</th>
+    <th>CSE 3207</th>
+    <th>Applied Statistics And Queuing Theory</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>5</th>
+    <th>CSE 3211</th>
+    <th>Compiler Design</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>6</th>
+    <th>CSE 3212</th>
+    <th>Compiler Design Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>7</th>
+    <th>CSE 3217</th>
+    <th>Mobile Computing</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>CSE 3218</th>
+    <th>Mobile Computing Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <th>9</th>
+    <th>HUM xxxx</th>
+    <th>Course from Optional Group</th>
+    <th>3.00</th>
+    <th></th>
+    <tr> <th>Theory : 15</th>
+         <th>Sessional : 3.00</th>     
+         <th>Thesis/Project : 1.50</th>
+         <th>Total: 19.50</th>
+         <th></th>
+    </tr>
+</table>
+<br>
+<br>
+<h3 style="color:#FF00FF;"><b>Optional Courses For Third Year Second Term</b><h3>
+<table>
+	<tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+  <tr>
+    <th>1</th>
+    <th>HUM 3207</th>
+    <th>Socialogy And Government</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>2</th>
+    <th>HUM 3217</th>
+    <th>Business And Industrial Law</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>3</th>
+    <th>HUM 3227</th>
+    <th>Proffessional Ethics And Moral Thoughts</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>4</th>
+    <th>HUM 3237</th>
+    <th>Occupational Psychology</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  </table>
+	
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>

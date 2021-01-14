@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+	body{
+		background-color: rgba(51,23,33,1);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 80%;
+		height: 100%;
+	}
+	li{
+		border-right: 1px solid blue;
+		padding: 8px;
+	}
+
+	.height500{
+		height: 500px;
+	}
+	.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  width: 100%;
+}
+
+	.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 30px;
+		}
+	a{
+		font-family: Lucida Sans Unicode;
+	}
+
+	a:hover{
+		color:red;
+	}
+	b{
+		font-family: Comic Sans MS;
+		font-size: 25px;
+	}
+	
+	.navbar:hover {background-color: #333;}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="indexx.html"><b>KUET</b>CSE</a>
+  <a href="slide.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Courses.html">Courses</a>
+  <a href="student.php">Student Corner</a>
+  <a href="teacher.php">Teacher Corner</a>
+  <a href="teacher.php"> Student Attendance</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="firsty.html" class="w3-bar-item w3-button">1st Year</a>
+  <a href="secondy.html" class="w3-bar-item w3-button">2nd Year</a>
+  <a href="thirdy.html" class="w3-bar-item w3-button">3rd Year</a>
+  <a href="fourthy.html" class="w3-bar-item w3-button">4th Year</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" style="padding-top: -110px;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container" style="width: 100%;">
+    <h1 style="float: center; ">Undergraduate Courses</h1>
+  </div>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>

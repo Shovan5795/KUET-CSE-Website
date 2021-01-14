@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<style type="text/css">
+  body{
+    background-color: rgba(51,23,33,1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  li{
+    border-right: 1px solid blue;
+    padding: 8px;
+  }
+
+  .height500{
+    height: 500px;
+  }
+  .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+}
+
+  .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+  a{
+    font-family: Lucida Sans Unicode;
+  }
+
+  a:hover{
+    color:red;
+  }
+  b{
+    font-family: Comic Sans MS;
+    font-size: 25px;
+  }
+  .p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+  }
+  p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    
+  }
+  .bb{
+    color: skyblue;
+  }
+
+  .fl{
+    float: left;
+  }
+  .navbar:hover {background-color: #333;}
+  .w3-content:
+
+  .bounce {
+ height: 50px;  
+ overflow: hidden;
+ position: relative;
+ background color: yellow;
+ color: yellow;
+ border: 1px solid orange;
+}
+.bounce p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+
+ -moz-transform:translateX(50%);
+ -webkit-transform:translateX(50%); 
+ transform:translateX(50%);
+ -moz-animation: bouncing-text 5s linear infinite alternate;
+ -webkit-animation: bouncing-text 5s linear infinite alternate;
+ animation: bouncing-text 5s linear infinite alternate;
+}
+
+@-moz-keyframes bouncing-text {
+ 0%   { -moz-transform: translateX(50%); }
+ 100% { -moz-transform: translateX(-50%); }
+}
+@-webkit-keyframes bouncing-text {
+ 0%   { -webkit-transform: translateX(50%); }
+ 100% { -webkit-transform: translateX(-50%); }
+}
+@keyframes bouncing-text {
+ 0%   { 
+ -moz-transform: translateX(50%); 
+ -webkit-transform: translateX(50%); 
+ transform: translateX(50%);    
+ }
+ 100% { 
+ -moz-transform: translateX(-50%); 
+ -webkit-transform: translateX(-50%); 
+ transform: translateX(-50%); 
+ }
+}
+.div1{
+    background-color: lightgrey;
+    width: 100px;
+    border: 10px solid red;
+    padding:2px;
+    margin: 50px;
+    position: absolute;
+    right: -50px;
+    top: 250px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+    from {background-color: lightgrey;}
+    to {background-color: rgb(12,18,20);}
+}
+
+@keyframes example {
+    from {background-color: rgb(12,18,20);}
+    to {background-color: lightgrey;}
+}
+
+.form-wrapper {
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+  border-color: #dedede #bababa #aaa #bababa;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+  -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+  box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+  margin: 100px auto;
+  overflow: hidden;
+  padding: 8px;
+  width: 450px;
+}
+
+.form-wrapper #search {
+  border: 1px solid #CCC;
+  -webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  -moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #999;
+  float: left;
+  font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+  height: 20px;
+  padding: 20px;
+  width: 320px;
+}
+
+.form-wrapper #search:focus {
+  border-color: #aaa;
+  -webkit-box-shadow: 0 1px 1px #bbb inset;
+  -moz-box-shadow: 0 1px 1px #bbb inset;
+  box-shadow: 0 1px 1px #bbb inset;
+  outline: 0;
+}
+
+.form-wrapper #search:-moz-placeholder,
+.form-wrapper #search:-ms-input-placeholder,
+.form-wrapper #search::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+}
+
+.form-wrapper #submit {
+  background-color: #0483a0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#31b2c3), to(#0483a0));
+  background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
+  background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
+  background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
+  background-image: -o-linear-gradient(top, #31b2c3, #0483a0);
+  background-image: linear-gradient(top, #31b2c3, #0483a0);
+  border: 1px solid #00748f;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+  color: #fafafa;
+  cursor: pointer;
+  height: 42px;
+  float: right;
+  font: 15px Arial, Helvetica;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+  width: 100px;
+}
+
+.form-wrapper #submit:hover,
+.form-wrapper #submit:focus {
+  background-color: #31b2c3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0483a0), to(#31b2c3));
+  background-image: -webkit-linear-gradient(top, #0483a0, #31b2c3);
+  background-image: -moz-linear-gradient(top, #0483a0, #31b2c3);
+  background-image: -ms-linear-gradient(top, #0483a0, #31b2c3);
+  background-image: -o-linear-gradient(top, #0483a0, #31b2c3);
+  background-image: linear-gradient(top, #0483a0, #31b2c3);
+}
+
+.form-wrapper #submit:active {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  outline: 0;
+}
+
+.form-wrapper #submit::-moz-focus-inner {
+  border: 0;
+}
+
+</style>
+<body>
+
+<div class="navbar">
+  <a href="indexx.html"><b>KUET</b>CSE</a>
+  <a href="slide.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Courses.html">Courses</a>
+  <a href="student.php">Student Corner</a>
+  <a href="teacher.php">Teacher Corner</a>
+  <a href="teacher.php"> Student Attendance</a>
+</div>
+
+<br>
+<br>
+<br>
+<div class="bounce">
+<p class="dotted" style="color: #95B9C7;"> Welcome to CSE website of KUET </p>
+</div>
+
+<br>
+<br>
+<div class="w3-content w3-display-container" style="max-width:800px; float: left;  image-rendering: crisp-edges">
+  <img class="mySlides" src="cse2.jpg" style="width:100%">
+  <img class="mySlides" src="cse1.jpg" style="width:100%">
+  <img class="mySlides" src="cse4.jpg" style="width:100%">
+  <img class="mySlides" src="cse5.jpg" style="width:100%">
+  <img class="mySlides" src="cse6.jpg" style="width:100%">
+  <img class="mySlides" src="cse3.jpg" style="width:100%">
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" style="color: black;" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" style="color: black;" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" style="color: black;" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" style="color: black;" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" style="color: black;" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" style="color: black;" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" style="color: black;" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" style="color: black;" onclick="currentDiv(6)"></span>
+  </div>
+</div>
+
+<form class="form-wrapper">
+    <input type="text" id="search" placeholder="Search for...">
+    <input type="submit" value="go" id="submit">
+</form>
+  </div>
+
+  <div class="div1" style="width: 45%; height: 55%; float: right;">
+  <p style="font-size: 100%; color: black; text-align: justify; ">
+  <h2 style="color: blue; text-align: center; font-family: impact;">Message from Head of the department</h2>
+  <br>
+  <h6>I would like to extend my warmest welcome to you as the Chair to the Department of Computer Science and Engineering (CSE) at Khulna University of Engineering and Technology (KUET). Computer Science and Engineering is the most flourishing discipline that cultivates at the cross road of new trends in science and engineering. It is focused on devising innovative, correct solutions to hard problems, whilst ensuring that the solutions execute optimally.</h6>
+  <br>
+Head
+<br>
+Department of Computer Science and Engineering 
+<br>
+Khulna University of Engineering and Technology
+<br>
+Khulna-9203, Bangladesh 
+<br>
+e-mail: sadi@mail.kuet.ac.bd
+  </p>
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+	body{
+		background-color: rgba(51,23,33,1);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 80%;
+		height: 100%;
+	}
+	li{
+		border-right: 1px solid blue;
+		padding: 8px;
+	}
+
+	.height500{
+		height: 500px;
+	}
+	.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  width: 100%;
+}
+
+	.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 25px;
+		}
+	a{
+		font-family: Lucida Sans Unicode;
+	}
+
+	a:hover{
+		color:red;
+	}
+	b{
+		font-family: Comic Sans MS;
+		font-size: 25px;
+	}
+	
+	.navbar:hover {background-color: #333;}
+	table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #808000;
+}
+tr:nth-child(odd) {
+    background-color: #00FF00;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="indexx.html"><b>KUET</b>CSE</a>
+  <a href="slide.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="Courses.html">Courses</a>
+  <a href="student.php">Student Corner</a>
+  <a href="teacher.php">Teacher Corner</a>
+  <a href="employee.php">Employee Corner</a>
+  <a href="attendance.php"> Student Attendance</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="firsty.html" class="w3-bar-item w3-button">1st Year</a>
+  <a href="secondy.html" class="w3-bar-item w3-button">2nd Year</a>
+  <a href="thirdy.html" class="w3-bar-item w3-button">3rd Year</a>
+  <a href="fourthy.html" class="w3-bar-item w3-button">4th Year</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" style="padding-top: -110px;" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="float: center; ">Undergraduate Courses</h1>
+  </div>
+</div>
+<br>
+<br>
+<div style="padding-right: 0px;">
+<h3 style="color:#800000;"><b>Year: First Term: First</b><h3>
+<table>
+	<tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+  <tr>
+    <th>1</th>
+    <th>CSE 1100</th>
+    <th>Introduction to Computer Systems</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>2</th>
+    <th>CSE 1107</th>
+    <th>Discrete Mathematics</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>3</th>
+    <th>EEE 1107</th>
+    <th>Basic Electrical Engineering</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>4</th>
+    <th> EEE 1108</th>
+    <th>Basic Electrical Engineering Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>5</th>
+    <th>HUM 1107</th>
+    <th>English and Human Communication</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+  <tr>
+    <th>6</th>
+    <th>HUM 1108</th>
+    <th>English Skills Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+   <tr>
+    <th>7</th>
+    <th>MATH 1107</th>
+    <th>Differential and Integral Calculus</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th> PHY 1107</th>
+    <th>Physics</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>9</th>
+    <th>PHY 1108</th>
+    <th>Physics Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr> <th>Theory : 15</th>
+         <th>Sessional : 5.25</th>     
+         <th>Thesis/Project : 0</th>
+         <th>Total Credit: 20.25</th>
+         <th></th>
+    </tr>
+   </table>
+   <br>
+   <br>
+   <h3 style="color:#800000;"><b>Year: First Term: Second</b><h3>
+   <table>
+   <tr>
+    <th>SL</th>
+    <th>Course Code</th>
+    <th>Title</th>
+    <th>Credit</th>
+    <th>Pre-Requisite</th>
+    </tr>
+    <tr>
+    <th>1</th>
+    <th>CSE 1201</th>
+    <th>Structured Programming</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>2</th>
+    <th>CSE 1202</th>
+    <th>Structured Programming Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>3</th>
+    <th>CSE 1203</th>
+    <th> Digital Logic Design</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>4</th>
+    <th>CHEM 1207</th>
+    <th>Chemistry</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>5</th>
+    <th> CSE 1204</th>
+    <th>Digital Logic Design Laboratory</th>
+    <th>1.50</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>6</th>
+    <th>CHEM 1208</th>
+    <th>Chemistry Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr>
+    <th>7</th>
+    <th>EEE 1217</th>
+    <th>Analog Electronics</th>
+    <th>3.00</th>
+    <th>EEE 1107</th>
+    </tr>
+    <tr>
+    <th>8</th>
+    <th>EEE 1218</th>
+    <th>Analog Electronics Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <th>9</th>
+    <th>MATH 1207</th>
+    <th>Coordinate Geometry and Differential Equations</th>
+    <th>3.00</th>
+    <th></th>
+    </tr>
+    <th>10</th>
+    <th>ME 1270</th>
+    <th>Computer Aided Design Laboratory</th>
+    <th>0.75</th>
+    <th></th>
+    </tr>
+    <tr> <th>Theory : 15</th>
+         <th>Sessional : 5.25</th>     
+         <th>Thesis/Project : 0</th>
+         <th>Total: 20.25</th>
+         <th></th>
+    </tr>
+</table>
+	
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+</body>
+</html>
